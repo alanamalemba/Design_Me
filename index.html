@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Me !</title>
+    <!-- -----------MATERIAL SYMBOLS-------------------------------- -->
+    <script
+      src="https://kit.fontawesome.com/88d8ad7163.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ---------- STYLE AND SCRIPT LINKS---------- -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <!-- ------------------------------MAIN BODY starts here------------- -->
+  <body>
+    <header>
+      <div class="top">
+        <div class="logo">
+          <i class="fa-sharp fa-solid fa-object-group"></i>
+          <h1 class="title">Design Me !</h1>
+        </div>
+        <!-- --------------------contact and my contacts--------------- -->
+        <div onclick="toggleMenu()" class="contact">contact me</div>
+
+        <!-- mycontact -->
+        <div class="myContacts">
+          <i
+            onclick="toggleMenu()"
+            style="color: white; font-size: 20px"
+            class="fa-solid fa-x closeMenu"
+          ></i>
+          <div class="social-icons">
+            <h2 style="color: white">Here are my contacts !</h2>
+            <p>
+              <a href="mailto:alanlsamalemba@gmail.com"
+                ><i class="fa-regular fa-envelope"></i> Email me</a
+              >
+            </p>
+            <p>
+              <a href="tel:+245719146076"
+                ><i class="fa-solid fa-phone"></i> Call me</a
+              >
+            </p>
+            <a href="https://wa.me/254719146076"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="https://github.com/alanamalemba"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.youtube.com/@AlanAmalemba"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.instagram.com/alanamalemba/?hl=en"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/alanamalemba?lang=en"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.tiktok.com/@alanamalemba"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/alanamalemba/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------controls-------------- -->
+      <nav class="controls">
+        <h2 class="sub-title">Controls</h2>
+        <button class="run-button">
+          <i class="fa-solid fa-person-running"></i>
+        </button>
+        <ul class="document">
+          <li onclick="openTab('html_text')" class="tab-link">html</li>
+          <li onclick="openTab('css_text')" class="tab-link">css</li>
+          <li onclick="openTab('js_text')" class="tab-link">javascript</li>
+        </ul>
+        <div onclick="toggleHelp()" class="help">
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <div onclick="closeTabs()" class="close">
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <!-- ---------------help window---------------- -->
+        <div class="helpWindow">
+          <p>
+            Click on the <em>html</em> tab-link to open up the html editing tab
+          </p>
+          <p>
+            Click on the <em>css</em> tab-link to open up the css editing tab
+          </p>
+          <p>
+            Click on the <em>javascript</em> tab-link to open up the javascript
+            editing tab
+          </p>
+          <br />
+          <p>
+            Click on <em>the run button</em> run your code and display results
+          </p>
+          <p>Click on the <em>X</em> button to close an active editing tab</p>
+          <br />
+          <p>Click the <em>i</em> to close this pop-up</p>
+          <br />
+          <p style="color: grey; font-size: 12px">
+            <em>copyright &copy; Alan Amalemba</em>
+          </p>
+        </div>
+      </nav>
+    </header>
+
+    <!-- -------------------- WORKSPACE--------------- -->
+    <div class="work_space">
+      <!-- ---------HTML TEXT AREA--------- -->
+      <textarea
+        name="html_text"
+        id="html_text"
+        class="tab-content"
+        cols="30"
+        rows="10"
+      >
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+     
+      </head>
+      <body>
+        <!-- WRITE YOUR CODE BELOW THIS COMMENT -->
+        
+
+        <!-- WRITE YOUR CODE ABOVE THIS COMMENT -->
+      </body>
+      </html>
+    </textarea
+      >
+      <!-- -------------------CSS TEXT AREA--------------- -->
+      <textarea
+        name="css_text"
+        id="css_text"
+        class="tab-content"
+        cols="30"
+        rows="10"
+      >
+      <style>
+          /* WRITE YOUR CODE BELOW THIS COMMENT */
+        
+
+        /* WRITE YOUR CODE ABOVE THIS COMMENT  */
+      </style>
+      </textarea>
+      <!-- ------------------JAVASCRIPT TEXT AREA--------------- -->
+      <textarea
+        name="js_text"
+        id="js_text"
+        class="tab-content"
+        cols="30"
+        rows="10"
+      >
+      <script>
+        //WRITE YOUR CODE BELOW THIS COMMENT
+
+
+        //WRITE YOUR CODE ABOVE THIS COMMENT
+      </script>
+      </textarea>
+      <!-- -------------------------DESIGN ME VIEW------------- -->
+      <div id="design_output"></div>
+    </div>
+    <footer><p>copyright &copy; Alan Amalemba</p></footer>
+  </body>
+</html>

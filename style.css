@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, "Open Sans", sans-serif;
+  /* outline: auto; */
+}
+
+a {
+  color: gray;
+  margin: 20px 0px;
+  display: block;
+  text-decoration: none;
+}
+
+a > i {
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+a > i:hover {
+  color: #fff;
+  scale: 1.2;
+}
+
+/* -------------HEADER------------ */
+header {
+  background: url(./images/header.png),
+    linear-gradient(
+      to right,
+      rgb(109, 109, 109) 20%,
+      rgba(121, 121, 120, 0.185)
+    );
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: fit-content;
+  padding: 10px;
+}
+
+.top {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.title {
+  display: inline-block;
+}
+
+.logo,
+.contact {
+  height: max-content;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.fa-sharp {
+  scale: 1.4;
+}
+
+.logo {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.775);
+}
+.contact {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  background: white;
+  color: black;
+  box-shadow: 5px 5px 5px gray;
+  transition: background 0.5s;
+}
+
+.contact:hover {
+  box-shadow: 0px 0px 10px green;
+}
+
+.contact:active {
+  scale: 0.95;
+}
+
+/* --------------my contacts menu-------------- */
+.myContacts {
+  border: grey 2px solid;
+  border-radius: 10px 0 0 10px;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  background-color: #000;
+  padding: 20px;
+  height: 100%;
+  z-index: 2;
+  width: 350px;
+  transition: 0.5s;
+}
+
+.myContacts.showMenu {
+  right: 0;
+  /* display: block; */
+}
+
+.social-icons {
+  margin-top: 25px;
+}
+
+/* -------------CONTROLS--------- */
+.controls {
+  border: 1px solid black;
+  background: rgba(0, 0, 0, 0.226);
+  border-radius: 8px;
+  box-shadow: inset 2px 2px 4px white, 2px 2px 4px black;
+  padding: 15px;
+  color: white;
+  position: relative;
+}
+
+.sub-title {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.run-button {
+  margin-bottom: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: green;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.run-button:hover {
+  box-shadow: 0px 0px 10px white;
+}
+
+.run-button:active {
+  scale: 0.95;
+}
+
+.fa-person-running {
+  scale: 1.5;
+}
+
+.document {
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  list-style-type: none;
+  position: relative;
+  transition: 0.4s;
+}
+
+ul li:hover {
+  text-shadow: 0px 0px 20px white;
+}
+
+ul li::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 4px;
+  left: 0;
+  bottom: -6px;
+  transition: 0.4s;
+  background: black;
+  border-radius: 10px;
+}
+
+/* -----------------close and help button---------- */
+.close {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.close:hover,
+.help:hover {
+  text-shadow: 0px 0px 10px black;
+}
+
+.close:active,
+.help:active {
+  scale: 0.9;
+}
+
+.help {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* --------------help Window------------ */
+.helpWindow {
+  display: none;
+
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: grey solid 2px;
+}
+
+.helpWindow.showHelp {
+  display: block;
+}
+
+/* -------------active link---------- */
+.active-link {
+  color: #000;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px #fff;
+}
+
+.active-link::after {
+  width: 100%;
+}
+
+/* -------------WORK SPACE--------- */
+.work_space {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  background: rgba(0, 0, 0, 0.226);
+  border-radius: 0px, 0px, 8px, 8px;
+  box-shadow: inset 8px 8px 8px white, inset -2px -2px 8px black;
+  height: 100vh;
+}
+
+.tab-content {
+  padding: 10px;
+  width: 40vw;
+  display: none;
+  height: 100vh;
+  transition: 0.4s;
+  background-color: black;
+  color: #fff;
+}
+
+/* ---------------active tab------------ */
+.tab-content.active-tab {
+  display: inline-block;
+}
+
+/* -----------------Design output----------- */
+#design_output {
+  width: 100%;
+}
+
+/* --------------------FOOTER------------------ */
+footer {
+  background: rgba(128, 128, 128, 0.563);
+  color: rgb(50, 49, 49);
+  text-align: center;
+}
